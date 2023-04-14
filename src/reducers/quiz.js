@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 // Change these to your own questions!
 const questions = [
-  { id: 1, questionText: 'A very famous space epos starts with the opening line: ”A long time ago in a galaxy far, far away….” What is the name of the creator of this epic space opera?', options: ['Luke Skywalker', 'George Lucas', 'George Costanza', 'George Washington'], correctAnswerIndex: 1 },
+  { id: 1, questionText: 'A very famous space epic starts with the opening line: ”A long time ago in a galaxy far, far away….” What is the name of the creator of this epic space opera?', options: ['Luke Skywalker', 'George Lucas', 'George Costanza', 'George Washington'], correctAnswerIndex: 1 },
   { id: 2, questionText: 'The Grant Impact Theory suggests that as a young planet, Earth was hit by another planet called Theia, resulting in what?', options: ['The formation of the Earth’s atmosphere', 'The presence of superheavy elements such as lithium and magnesium', 'The formation of the moon', 'The origins of life on Earth'], correctAnswerIndex: 2 },
   { id: 3, questionText: 'What is the average surface temperature of the sun, in Celsius?', options: ['500 °C', '5,500 °C', '10,500 °C', '20,500 °C'], correctAnswerIndex: 1 },
   { id: 4, questionText: 'Halley’s Comet returns to Earth’s vicinity approximately every…', options: ['50 years', '75 years', '100 years', '200 years'], correctAnswerIndex: 1 },
