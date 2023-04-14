@@ -1,9 +1,3 @@
-.summaryContainer {
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
-}
-
 .summaryHeader {
     display: flex;
     flex-direction: column;
@@ -13,10 +7,7 @@
     width: 80%;
     background-image: linear-gradient(to bottom right, #63768D, #8AC6D0);
     padding-bottom: 60px;
-    margin-bottom: 40px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 40px;
+    margin: 40px auto;
 }
 
 .summaryTitle {

@@ -1,14 +1,20 @@
 /* eslint-disable max-len */
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { quiz } from 'reducers/quiz';
 import { ScrollToTopOnMount } from './ScrollToTopOnMount';
 
 export const Summary = () => {
-  const userAnswers = useSelector((state) => state.quiz.answers)
+  const dispatch = useDispatch();
+  const userAnswers = useSelector((state) => state.quiz.answers);
 
   const correctAnswer = userAnswers.filter((answers) => {
     return answers.isCorrect === true
   })
+
+  const onRestartClick = () => {
+    dispatch(quiz.actions.restart())
+  }
 
   return (
     <>
@@ -29,6 +35,7 @@ export const Summary = () => {
           )
         })}
       </div>
+      <button className="restart-button" type="button" onClick={onRestartClick}>Restart quiz</button>
     </>
   )
 }
