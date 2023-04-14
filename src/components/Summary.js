@@ -22,7 +22,7 @@ export const Summary = () => {
       <div className="summaryContainer">
         <div className="summaryHeader">
           <h1 className="summaryTitle">Quiz Summary</h1>
-          <h2 className="result">You got {correctAnswer.length} out of 6!</h2>
+          <h2 className="result">You got {correctAnswer.length} out of 8!</h2>
         </div>
         {userAnswers.map((singleAnswer) => {
           return (
